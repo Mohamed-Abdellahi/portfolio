@@ -1,87 +1,138 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mohamed Abdellahi – CV & Projets</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Abdellahi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d04d93c4.js" crossorigin="anonymous"></script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f7f9fc;
+      color: #222;
       line-height: 1.6;
-      text-align: center;
     }
+
     header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 1rem;
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
     }
-    h1 {
-      margin: 0;
+
+    header h1 {
       font-size: 2.5rem;
     }
-    p.subtitle {
-      font-size: 1.2rem;
+
+    header p {
+      font-size: 1.1rem;
       margin-top: 0.5rem;
       color: #ccc;
     }
-    section {
-      padding: 2rem 1rem;
+
+    .container {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 2rem auto;
+      padding: 1rem;
     }
-    a.button {
+
+    .btn {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
-      margin: 1rem 0;
       background: #0077cc;
-      color: #fff;
+      color: white;
+      padding: 0.75rem 1.5rem;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-weight: bold;
+      margin-bottom: 2rem;
+      transition: background 0.3s;
     }
-    a.button:hover {
+
+    .btn:hover {
       background: #005fa3;
     }
-    ul {
-      list-style-type: none;
+
+    ul.project-list {
+      list-style: none;
       padding: 0;
     }
-    li {
-      margin: 0.5rem 0;
+
+    ul.project-list li {
+      margin: 1rem 0;
+    }
+
+    ul.project-list li a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 600;
+    }
+
+    ul.project-list li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .icons {
+      margin-top: 1rem;
+    }
+
+    .icons a {
+      margin: 0 10px;
+      color: #333;
+      font-size: 1.5rem;
+    }
+
+    .icons a:hover {
+      color: #0077cc;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Mohamed Abdellahi</h1>
-    <p class="subtitle">Étudiant passionné par le trading, la data science et les systèmes intelligents</p>
+    <p>Algo Trading • Data Science • Energy Markets</p>
+    <p><a href="index.html" style="color: #ccc; font-size: 0.9rem; text-decoration: underline;">Version française</a></p>
   </header>
 
-  <section>
-    <h2>📄 Mon CV</h2>
-    <a class="button" href="Mohamed_Abdellahi_203_Resume_2025.pdf" target="_blank">Voir mon CV</a>
-  </section>
+  <div class="container">
+    <h2>📄 My Resume</h2>
+    <a href="Mohamed_Abdellahi_203_Resume_2025.pdf" class="btn" target="_blank">Download Resume (PDF)</a>
 
-  <section>
-    <h2>📁 Mes projets</h2>
-    <ul>
-      <li><a href="#">Projet 1 – (à compléter)</a></li>
-      <li><a href="#">Projet 2 – (à compléter)</a></li>
+    <h2>📁 My Projects</h2>
+    <ul class="project-list">
+      <li><a href="#">Market Making Strategy – stratMK0 (to be updated)</a></li>
+      <li><a href="#">Forward Gas Curve Modeling – Gaussian Process (to be updated)</a></li>
     </ul>
-  </section>
 
-  <section>
-    <h2>📬 Me contacter</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/mohamed-abdellahi-mohamed-abdellahi-4341a1205/" target="_blank">LinkedIn</a><br>
-      <a href="mailto:mohamed-abdellahi.mohamed-abdellahi@dauphine.eu">mohamed-abdellahi.mohamed-abdellahi@dauphine.eu</a>
-    </p>
-  </section>
+    <h2>📬 Contact Me</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:mohamed-abdellahi.mohamed-abdellahi@dauphine.eu">mohamed-abdellahi.mohamed-abdellahi@dauphine.eu</a></p>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/mohamed-abdellahi-mohamed-abdellahi-4341a1205/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Mohamed-Abdellahi" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
 
+  <footer>
+    © 2025 Mohamed Abdellahi. All rights reserved.
+  </footer>
 </body>
 </html>
