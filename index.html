@@ -20,27 +20,38 @@
       line-height: 1.6;
     }
 
-    header {
+    nav {
       background-color: #1a1a1a;
       color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      color: #ccc;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
+      display: flex;
+      justify-content: center;
       padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0077cc;
     }
 
     .btn {
@@ -51,46 +62,11 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
-      margin-bottom: 2rem;
       transition: background 0.3s;
     }
 
     .btn:hover {
       background: #005fa3;
-    }
-
-    ul.project-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul.project-list li {
-      margin: 1rem 0;
-    }
-
-    ul.project-list li a {
-      text-decoration: none;
-      color: #0077cc;
-      font-weight: 600;
-    }
-
-    ul.project-list li a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-
-    .contact a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-
-    .icons {
-      margin-top: 1rem;
     }
 
     .icons a {
@@ -102,34 +78,57 @@
     .icons a:hover {
       color: #0077cc;
     }
+
+    footer {
+      text-align: center;
+      margin: 3rem 0;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mohamed Abdellahi</h1>
-    <p>Algo Trading • Data Science • Energy Markets</p>
-    <p><a href="index.html" style="color: #ccc; font-size: 0.9rem; text-decoration: underline;">Version française</a></p>
-  </header>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#articles">Articles</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <div class="container">
-    <h2>📄 My Resume</h2>
-    <a href="Mohamed_Abdellahi_203_Resume_2025.pdf" class="btn" target="_blank">Download Resume (PDF)</a>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Mohamed Abdellahi, a master's student in Financial Markets (Master 203 - Paris Dauphine). I'm passionate about algorithmic trading, data science, and energy markets. My background mixes quantitative research, software development, and a hands-on approach to problem-solving in financial markets.</p>
+  </section>
 
-    <h2>📁 My Projects</h2>
-    <ul class="project-list">
-      <li><a href="#">Market Making Strategy – stratMK0 (to be updated)</a></li>
-      <li><a href="#">Forward Gas Curve Modeling – Gaussian Process (to be updated)</a></li>
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Crédit Agricole CIB – Credit Algo Trading Intern</strong><br>Statistical modeling and development of pricing tools using Python and Q/Kdb. Worked on RV strategies and supported traders with automation tools.</p>
+    <p><strong>Natixis CIB – Repo & Fixed Income Structuring Intern</strong><br>Full haircut review, pricing of repo and TRS, automation of processes, and collaboration with the trading desk.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Market Making Strategy – <em>stratMK0</em></li>
+      <li>Forward Gas Curve Modeling using Gaussian Processes</li>
+      <li>Electricity Price Forecasting with ML</li>
+      <li>American Option Pricing using Monte Carlo + Longstaff-Schwartz</li>
     </ul>
+  </section>
 
-    <h2>📬 Contact Me</h2>
-    <div class="contact">
-      <p>Email: <a href="mailto:mohamed-abdellahi.mohamed-abdellahi@dauphine.eu">mohamed-abdellahi.mohamed-abdellahi@dauphine.eu</a></p>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/mohamed-abdellahi-mohamed-abdellahi-4341a1205/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Mohamed-Abdellahi" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
+  <section id="articles">
+    <h2>Articles</h2>
+    <p>Coming soon: personal blog and Medium articles on trading strategies, energy models, and market insights.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mohamed-abdellahi.mohamed-abdellahi@dauphine.eu">mohamed-abdellahi.mohamed-abdellahi@dauphine.eu</a></p>
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/mohamed-abdellahi-mohamed-abdellahi-4341a1205/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Mohamed-Abdellahi" target="_blank"><i class="fab fa-github"></i></a>
     </div>
-  </div>
+  </section>
 
   <footer>
     © 2025 Mohamed Abdellahi. All rights reserved.
