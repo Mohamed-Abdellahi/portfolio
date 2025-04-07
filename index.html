@@ -24,22 +24,44 @@
       background-color: #1a1a1a;
       color: white;
       display: flex;
-      justify-content: center;
-      padding: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    nav a {
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
       color: #fff;
-      margin: 0 1rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      margin-left: 1.5rem;
       text-decoration: none;
       font-weight: bold;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
       color: #0077cc;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: #555;
     }
 
     section {
@@ -88,12 +110,20 @@
 </head>
 <body>
   <nav>
-    <a href="#about">About Me</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#articles">Articles</a>
-    <a href="#contact">Contact</a>
+    <div class="brand">Mohamed Abdellahi</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#articles">Articles</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
+
+  <header>
+    <h1>Algo Trading • Data Science • Energy Markets</h1>
+    <p>Master's student in Financial Markets | Passionate about smart financial systems</p>
+  </header>
 
   <section id="about">
     <h2>About Me</h2>
@@ -109,10 +139,10 @@
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li>Market Making Strategy – <em>stratMK0</em></li>
-      <li>Forward Gas Curve Modeling using Gaussian Processes</li>
-      <li>Electricity Price Forecasting with ML</li>
-      <li>American Option Pricing using Monte Carlo + Longstaff-Schwartz</li>
+      <li><a href="#">Market Making Strategy – <em>stratMK0</em></a></li>
+      <li><a href="#">Forward Gas Curve Modeling using Gaussian Processes</a></li>
+      <li><a href="#">Electricity Price Forecasting with ML</a></li>
+      <li><a href="#">American Option Pricing using Monte Carlo + Longstaff-Schwartz</a></li>
     </ul>
   </section>
 
